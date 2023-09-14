@@ -14,6 +14,10 @@ const ItemScreen = ({route}) => {
   const navigation = useNavigation();
   const data = route?.params?.params;
 
+  const handleBooking = () => {
+    alert('Hotel has been booked successfully! ');
+  };
+
   return (
     <SafeAreaView className="flex-1 bg-white relative">
       <ScrollView className="flex-1 px-4 py-4">
@@ -140,7 +144,9 @@ const ItemScreen = ({route}) => {
 
           {/* Book Now Button */}
 
-          <TouchableOpacity className="border border-red-100 mb-10 justify-center items-center bg-[#7eafbb] p-5 rounded-xl">
+          <TouchableOpacity
+            className="border border-red-100 mb-10 justify-center items-center bg-[#7eafbb] p-5 rounded-xl"
+            onPress={() => handleBooking()}>
             <Text className="text-white text-3xl font-bold">Book Now</Text>
           </TouchableOpacity>
         </View>

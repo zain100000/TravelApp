@@ -4,7 +4,7 @@ import {ImageBackground, Text, View} from 'react-native';
 const Splash = ({navigation}) => {
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate('Discover');
+      navigation.navigate('Login');
     }, 2000);
   }, []);
 

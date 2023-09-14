@@ -12,7 +12,7 @@ const ItemsContainer = ({imgSrc, title, location, data}) => {
       onPress={() => navigation.navigate('ItemScreen', {params: data})}>
       <Image
         source={{uri: imgSrc}}
-        className="object-contain rounded-md mt-2 w-full h-40"
+        className="object-contain rounded-md mt-2 w-full h-40 mb-3"
       />
 
       {title ? (

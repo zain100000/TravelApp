@@ -129,7 +129,7 @@ const Discover = () => {
                         imgSrc={
                           data?.photo?.images?.small?.url
                             ? data?.photo?.images?.small?.url
-                            : 'https://media-cdn.tripadvisor.com/media/photo-o/0a/35/c6/91/getlstd-property-photo.jpg'
+                            : 'https://media-cdn.tripadvisor.com/media/photo-f/10/a4/78/de/tarka-house-restaurant.jpg'
                         }
                         title={data?.name}
                         location={data?.location_string}

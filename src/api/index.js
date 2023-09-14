@@ -5,19 +5,16 @@ export const getPlacesData = async () => {
     const {
       data: {data},
     } = await axios.get(
-      `https://travel-advisor.p.rapidapi.com/restaurants/list-in-boundary`,
+      `https://travel-advisor.p.rapidapi.com/restaurants/list`,
       {
         params: {
-          bl_latitude: '11.847676',
-          tr_latitude: '12.838442',
-          bl_longitude: '109.095887',
-          tr_longitude: '109.149359',
-          restaurant_tagcategory_standalone: '10591',
+          location_id: '293919',
           restaurant_tagcategory: '10591',
-          limit: '30',
+          restaurant_tagcategory_standalone: '10591',
           currency: 'USD',
-          open_now: 'false',
           lunit: 'km',
+          limit: '30',
+          open_now: 'false',
           lang: 'en_US',
         },
         headers: {
